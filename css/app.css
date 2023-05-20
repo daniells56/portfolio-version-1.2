@@ -1,0 +1,20 @@
+
+
+body {
+    background: linear-gradient(294.89deg, #2A0249 16.13%, #2A0249 16.14%, #141553 45.61%, #141653 45.61%, #0E114F 78.95%);
+}
+
+
+.center {
+    position: fixed;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+
+#perfil-logo {
+    width: 210px;
+    height: 210px;
+    border-radius: 143.5px;
+}
