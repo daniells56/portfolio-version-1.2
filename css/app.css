@@ -1,7 +1,23 @@
-
-
 body {
-    background: linear-gradient(294.89deg, #2A0249 16.13%, #2A0249 16.14%, #141553 45.61%, #141653 45.61%, #0E114F 78.95%);
+    animation: anim-background 10s linear infinite;
+    background: linear-gradient(294.89deg, #390363 16.13%, #51048c 16.14%, #1d1e6f 45.61%, #0E114F 78.95%);
+    background-size: 400% 400%;
+    animation: colors 10s ease-in infinite;
+}
+
+
+@keyframes colors {
+    0% {
+        background-position:0% 50% ;
+    }
+
+    50% {
+        background-position: 70% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 
@@ -18,3 +34,21 @@ body {
     height: 210px;
     border-radius: 143.5px;
 }
+
+#title-home {
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 56px;
+    line-height: 101px;
+    color: #FFFFFF;
+    top: 415px;
+}
+
+#button {
+    width: 268px;
+    height: 78px;
+    background: linear-gradient(90deg, #1F1367 50%, #4A0184 131.16%);
+    top: 550px;
+}
+
