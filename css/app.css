@@ -1,9 +1,38 @@
+
 body {
     animation: anim-background 10s linear infinite;
-    background: linear-gradient(294.89deg, #390363 16.13%, #51048c 16.14%, #1d1e6f 45.61%, #0E114F 78.95%);
+    background: linear-gradient(294.89deg, #4c0a7e 16.13%, #110093 16.14%, #002873 45.61%, #441183 78.95%);
     background-size: 400% 400%;
-    animation: colors 10s ease-in infinite;
+    animation: colors 5s ease-in infinite;
+    margin: 0px;
+    overflow-x: hidden;
 }
+
+.center {
+    position: relative;
+    top: 50%;
+    transform: translateY(0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home {
+    position: relative;
+    bottom: 40px;
+}
+
+
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+
 
 
 @keyframes colors {
@@ -20,19 +49,46 @@ body {
     }
 }
 
-
-.center {
+#menu {
     position: fixed;
-    left: 50%;
-    top: 35%;
+    text-align: center;
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 27px;
+    line-height: 39px;
+    color: #FFFFFF;
     transform: translate(-50%, -50%);
+    left: 86%;
+    top: 30px;
+    z-index: 99999;
+}
+
+#menu span {
+    margin-left: 15px;
+    transition: all 250ms ease-in-out;
+    white-space: nowrap;
+}
+
+#menu span:hover {
+    color: hsl(265, 82%, 50%);
+    transform: scale(1.1);
+    transition: all 250ms ease-in-out;
+    cursor: pointer;
 }
 
 
+
+
+
 #perfil-logo {
+    position: relative;
     width: 210px;
     height: 210px;
     border-radius: 143.5px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 240px;
 }
 
 #title-home {
@@ -42,13 +98,105 @@ body {
     font-size: 56px;
     line-height: 101px;
     color: #FFFFFF;
-    top: 415px;
+    top: 85px;
+    width: auto;
+    height: auto;
 }
 
 #button {
     width: 268px;
     height: 78px;
     background: linear-gradient(90deg, #1F1367 50%, #4A0184 131.16%);
-    top: 550px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 90px;
 }
 
+#button:hover {
+
+    background-color: rgba(34, 34, 34, 0);
+    border-width: 0.5px;
+    border-color: white;
+    border-style: solid;
+    transition: 200ms;
+    cursor: pointer;
+
+
+}
+
+#btn-text {
+    position: fixed;
+    width: 80%;
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 46px;
+    color: #FFFFFF;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#info-home {
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 49px;
+    top: 50px;
+
+    color: #FFFFFF;
+}
+
+
+#projects {
+    position: relative;
+    margin-top: 320px;
+    text-align: center;
+}
+
+
+#title-project {
+    position: relative;
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 101px;
+    color: #FFFFFF;
+}
+
+#description-project {
+
+    position: relative;
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 58px;
+    color: #FFFFFF;
+    bottom: 80px;
+
+}
+
+.project {
+    text-align: center;
+    width: 240px;
+    height: 269px;
+    background: #33075F;
+    border-radius: 37px;
+}
+
+.name {
+    position: relative;
+    font-family: 'Murecho';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 58px;
+    color: #FFFFFF;
+    top: 80%;
+}
