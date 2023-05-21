@@ -1,11 +1,11 @@
 
 body {
-    animation: anim-background 10s linear infinite;
-    background: linear-gradient(294.89deg, #4c0a7e 16.13%, #110093 16.14%, #002873 45.61%, #441183 78.95%);
+    background: linear-gradient(294.89deg, #6d16b0 16.13%, #1905b2 16.14%, #18469c 45.61%, #5400bb 78.95%);
     background-size: 400% 400%;
-    animation: colors 5s ease-in infinite;
+    animation: colors 15s ease-in infinite;
     margin: 0px;
     overflow-x: hidden;
+    display: flexbox;
 }
 
 .center {
@@ -182,12 +182,37 @@ body {
 
 }
 
+#projects {
+
+    position: relative;
+
+}
+
+#projectsob {
+    position: relative;
+    bottom: 60px;
+    flex-wrap: wrap;
+
+
+}
+
+
+
 .project {
     text-align: center;
     width: 240px;
     height: 269px;
     background: #33075F;
     border-radius: 37px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: all 0.1s;
+
+}
+
+.project:hover {
+    transform: scale(1.1);
+    transition: all 0.1s;
 }
 
 .name {
